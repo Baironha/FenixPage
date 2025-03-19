@@ -1,14 +1,13 @@
 import React from "react";
-import { Link} from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa";
+import "../style/BtnWhatsappStyle.css"; // Asegúrate de que este archivo CSS exista
 
-function Btnwhatsapp(){
-    return(
-        <div>
-            
-            <Link to={'https://wa.me/50687409661'}><img src="../img/LogoWhatsapp.png" alt="" />a</Link>
-            <a href="https://wa.me/50687409661"><img src="../img/LogoWhatsapp.png" alt="" /></a>
-        </div>
-    )
+function BtnWhatsapp() {
+    return (
+        <a  href="https://wa.me/50687409661"  target="_blank"  rel="noopener noreferrer" className="whatsapp-button">
+            <FaWhatsapp className="whatsapp-icon" />
+        </a>
+    );
 }
 
-export default Btnwhatsapp
+export default BtnWhatsapp;

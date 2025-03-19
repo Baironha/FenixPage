@@ -9,7 +9,7 @@ function NavBar() {
     const handleLogin = () => {
         Swal.fire({
         title: "Redirigiendo...",
-        text: "Por Favor espere, esta siendo redirigido a mi ReadMe",
+        text: "Por Favor espere, esta siendo redirigido al Login",
         icon: "info",
         timer: 2000,
         showConfirmButton: false,
@@ -48,7 +48,7 @@ function NavBar() {
             <select onChange={handleContactChange} defaultValue="" className="nav-item">
                 <option value="" disabled>Contacto</option>
                 <option value="tel:87409661">Tel: 87409661</option>
-                <option value="mailto:bhorna@fwdcostarica.com">Email: bhorna@fwdcostarica.com</option>
+                <option value="http://localhost:5173/Contact">Email</option>
                 <option value="https://www.instagram.com/baironh_alvarez.cr/?__d=1">
                 Instagram: baironh_alvarez.cr
                 </option>

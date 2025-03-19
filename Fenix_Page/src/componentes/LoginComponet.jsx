@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Llamados from "../Servicios/Llamados";
+import '../style/LoginStyle.css'
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 
 function LoginComponet() {
     const [NombreUsu, SetNombreUsu] = useState("");
@@ -63,7 +64,7 @@ function LoginComponet() {
             }).then(() => {
                 navigate("/Home");
             });
-        } else if (usuarioEncontrado.rol.toLowerCase() === "Usuarios") {
+        } else if (usuarioEncontrado.rol === "Usuario") {
             // Validación 2: Si es Trabajador
             Swal.fire({
                 icon: "success",
@@ -89,8 +90,9 @@ function LoginComponet() {
                 <label htmlFor="password" id="LabelLogin2">Contraseña</label><br />
                 <input id="InputsLogin2" type="password" value={ContraUsu} onChange={password} placeholder="Ingrese su contraseña" />
                 <br />
-                <button onClick={validar}>Iniciar Sesión</button>
+                <button id="buttonLogin" onClick={validar}>Iniciar Sesión</button>
                 <br />
+                <strong><Link to={'/Registrarse'}>¿Ya te registraste?</Link></strong>
             </div>
         </div>
     );

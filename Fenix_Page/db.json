@@ -1,12 +1,8 @@
 {
-    "Usuarios": [
-        {
-        "id": "0321",
-        "rol": "Usuarios",
-        "nombre": "w",
-        "email": "w",
-        "password": "w",
-        "direccion": "w"
-        }
-    ]
+  "Usuarios": [
+
+  ],
+  "SolicitudSocio":[
+    
+  ]
 }

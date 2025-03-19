@@ -1,6 +1,6 @@
 async function getUsers() {
     try {
-        const response = await fetch('http://localhost:3001/Usuarios', {
+        const response = await fetch('http://localhost:3001/SolicitudSocio', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -23,21 +23,22 @@ export { getUsers };
 
 //////////LLAMADO POST//////////
 
-async function postUsers(nombre,email,password,direccion) {
+async function postUsers(nombre,email,telSocio,nombreproyecto,descripcion) {
     try {
         
         const userData = { 
             rol: "Usuario",
             nombre,
             email,
-            password,
-            direccion
+            telSocio,
+            nombreproyecto,
+            descripcion
         
         };
 
 
 
-        const response = await fetch("http://localhost:3001/Usuarios", {
+        const response = await fetch("http://localhost:3001/SolicitudSocio", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -60,7 +61,7 @@ export{postUsers}
 //////////////LLAMADO UPDATE/////////////
 
 
-async function updateUsers(nombre, email,password,direccion,id) 
+async function updateUsers(nombre, email,telSocio,nombreproyecto,descripcion,id) 
 {
     try {
         
@@ -68,8 +69,9 @@ async function updateUsers(nombre, email,password,direccion,id)
             rol: "Usuario",
             nombre, 
             email,
-            password,
-            direccion
+            telSocio,
+            nombreproyecto,
+            descripcion
 
         
         };
@@ -78,7 +80,7 @@ async function updateUsers(nombre, email,password,direccion,id)
         
 
 
-        const response = await fetch("http://localhost:3001/Usuarios/"+id, {
+        const response = await fetch("http://localhost:3001/SolicitudSocio/"+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -103,7 +105,7 @@ export{updateUsers}
 
 async function deleteUser(id) {
     try {
-        const response = await fetch(`http://localhost:3001/Usuarios/${id}`, {
+        const response = await fetch(`http://localhost:3001/SolicitudSocio/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

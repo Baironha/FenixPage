@@ -20,21 +20,17 @@ function FooterComponet(){
                     </div>
                     <div class="footer-section">
                         <h3>Servicios</h3>
-                        <p>Exportación de paquetes</p>
-                        <p>Importación de paquetes</p>
-                        <p>Gestión de productos</p>
+                        <p>Analisis de datos</p>
+                        <p>Desarrollo web</p>
+                        <p>Asesoramiento financiero</p>
+                        <p>Adminitracion de proyectos</p>
                     </div>
-                    <div class="footer-section">
-                        <h3>Sucursales</h3>
-                        <p>Puntarenas Centro</p>
-                        <p>Liberia Guanacaste</p>
-                        <p>Santa Ana, San José</p>
-                    </div>
+                    
                 </div>
             </footer>
 
             <div class="footer-bottom">
-                <h4>Ecommerce Mr.Hermes</h4>
+                <h1><strong>FENIX</strong></h1>
             </div>
         </div>
     )

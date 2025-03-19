@@ -1,73 +1,56 @@
-#ContainerTabla{
-    justify-content: center;
-    margin-top: 700px;
-    top: 800px;
+#ContainerTabla {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    color: #eaeaea;
+    font-family: Arial, sans-serif;
 }
+
 #ContainerBtn {
-    gap: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0; /* Añade espacio para que los botones no estén pegados al borde */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-#MostrarTablaTrabajador, #EditarTrabajador, #EliminarTrabajador {
-    width: 200px;
-    padding: 14px 28px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    background: linear-gradient(45deg, #3d7aac, #56c7f2); /* Gradiente atractivo */
-    border: 2px solid transparent;
-    border-radius: 50px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra suave */
+button {
+    background: #0f3460;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
     cursor: pointer;
-    text-transform: uppercase;
-    transition: all 0.4s ease-in-out;
-    position: relative;
-    z-index: 0;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
 }
 
-#MostrarTablaTrabajador::before, #EditarTrabajador::before, #EliminarTrabajador::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
+button:hover {
+    background: #e94560;
 }
 
-#MostrarTablaTrabajador:hover, #EditarTrabajador:hover, #EliminarTrabajador:hover {
-    background: linear-gradient(45deg, #56c7f2, #3d7aac); /* Cambio de gradiente */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra más fuerte en hover */
-    transform: translateY(-8px); /* Movimiento hacia arriba */
+#TablaTrabajadores {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-#MostrarTablaTrabajador:active, #EditarTrabajador:active, #EliminarTrabajador:active {
-    background: #3e8e41; /* Fondo sólido al hacer clic */
-    transform: translateY(2px); /* Efecto de presión */
+#TablaTrabajadores th, #TablaTrabajadores td {
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    text-align: left;
 }
 
-#MostrarTablaTrabajador:hover::before, #EditarTrabajador:hover::before, #EliminarTrabajador:hover::before {
-    background: rgba(0, 0, 0, 0.2); /* Sombra de fondo cuando se hace hover */
+#TablaTrabajadores th {
+    background: #0f3460;
+    color: white;
 }
 
-#MostrarTablaTrabajador, #EditarTrabajador, #EliminarTrabajador {
-    animation: floatUp 1.5s ease-in-out infinite; /* Animación de "flotar" */
+#TablaTrabajadores tr:nth-child(even) {
+    background: #1a1a2e;
 }
 
-@keyframes floatUp {
-    0% {
-        transform: translateY(0); /* Comienza en su lugar */
-    }
-    50% {
-        transform: translateY(-10px); /* Se mueve hacia arriba */
-    }
-    100% {
-        transform: translateY(0); /* Vuelve al inicio */
-    }
+#TablaTrabajadores tr:hover {
+    background: #e94560;
+    color: white;
+    transition: 0.3s;
 }

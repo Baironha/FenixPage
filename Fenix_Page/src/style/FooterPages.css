@@ -1,6 +1,5 @@
 /* Estilo general del footer */
 #padreFooter {
-    background-color: #2C3E50; /* Color de fondo oscuro */
     color: #fff;  /* Color de texto blanco */
     font-family: 'Arial', sans-serif;
 }
@@ -43,7 +42,6 @@ footer {
 
 /* Footer inferior */
 .footer-bottom {
-    background-color: #34495E;  /* Color un poco más claro para la parte inferior */
     padding: 20px;
     text-align: center;
 }

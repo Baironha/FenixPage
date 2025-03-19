@@ -1,39 +1,110 @@
-#BtnExplorarVerMas{
-    display: inline-block;
-    width: 165px;
-    height: 165px;
-    border-radius: 50%;
-    font-family: 'Bai Jamjuree', Helvetica, Arial, Lucida, sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 17px;
-    color: #FFFFFF !important;
-    line-height: 1.4em;
-    background-color: #E63329;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    display: inline-block;
-    width: 165px;
-    height: 165px;
-    border-radius: 50%;
-    font-size: 16px;
+#ContainerImgHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ajusta según necesidad */
+    overflow: hidden;
+    z-index: -1; /* Envía la imagen al fondo */
+}
+
+#ImgFondoHeader {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que cubra toda el área sin distorsionarse */
 }
 
 
-/* App.css */
+
+
+
+/* Contenedor principal */
 #container {
-    top: 1px;
-    margin-top: 1px;
     width: 100%;
-    height: 100%;  /* El contenedor ocupará toda la altura de la ventana */
-    background-image: url('../img/fondoHearder1.jpg');  /* Ruta a la imagen */
-    background-size: cover;  /* La imagen cubrirá todo el área */
-    background-position: center center;  /* Centra la imagen */
-    color: white;  /* Asegura que el texto se vea bien sobre el fondo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+/* Título principal "FENIX" */
+#main-title {
+    font-size: 90px;
+    font-weight: bold;
     text-align: center;
+    color: white;
+    margin: 2px auto; /* Espaciado superior de 2px */
+    position: relative;
+    z-index: 10; /* Asegura que esté encima de los demás elementos */
+}
+
+/* Contenedor de los títulos "ECONOMIA" y "DEL SIGLO XXI" */
+#economy-container {
+    display: flex;
+    align-items: center;
+    margin-left: 100px; /* Alineado a la izquierda */
+}
+
+/* Título "ECONOMIA" */
+#economy-title {
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    margin-right: 3px; /* Espacio de 3px entre "ECONOMIA" y "DEL SIGLO XXI" */
+}
+
+/* Subtítulo "DEL SIGLO XXI" */
+#sub-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin-left: 0px;
+}
+
+/* Título "Y ANALISIS DE DATOS" con diseño de borde blanco */
+#analysis-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px white; /* Borde blanco */
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+/* Descripción */
+.subtitle {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 100px;
+}
+
+/* Resaltado en rojo */
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+/* Punto rojo en "alturas." */
+.red-dot::after {
+    content: ".";
+    color: red;
+}
+
+/* Botón */
+#BtnExplorarVerMas {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#BtnExplorarVerMas:hover {
+    background-color: darkred;
 }

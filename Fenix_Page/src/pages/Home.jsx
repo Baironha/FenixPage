@@ -1,22 +1,36 @@
 import React from "react";
+import '../style/Home.css'
+
 import NavBar from "../componentes/NavBar";
 import HeaderHome from "../componentes/HeaderHome";
-import BodyHome from "../componentes/BodyHome";
-import '../style/Home.css'
+import BodyHomeInfo from "../componentes/BodyHomeInfo";
+
 import FooterComponet from "../componentes/FooterComponet";
 import Btnwhatsapp from "../componentes/BtnWhatsapp";
+import ServiciosHome from "../componentes/ServiciosHome";
+import SolicitudSocio from "../componentes/SolicitudSocio";
+import EduacionFenix from "../componentes/EducacionFenix";
+
 
 function Home(){
     return(
-        <div id="Home">
+        <div id="body">
             <NavBar/>
+            <Btnwhatsapp/>
             <br />
             <HeaderHome/>
             <br />
-            <BodyHome/>
+            <BodyHomeInfo/>
+            <br />
+            <ServiciosHome/>
+            <br />
+            <br />
+            <EduacionFenix/>
+            <br />
+            <br />
+            <SolicitudSocio/>
             <br />
             <FooterComponet/>
-            <Btnwhatsapp/>
         </div>
     )
 }

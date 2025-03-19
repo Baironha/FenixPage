@@ -1,25 +1,39 @@
 import React from "react";
-import '../style/Headerstyle.css'
-import '../img/FondoHeader.avif'
+import '../style/Headerstyle.css';
 
-function HeaderHome(){
-    return(
+function HeaderHome() {
+    return (
         <div id="container">
-            <div>
-                <header>
-                    <h1>Fenix</h1>
-                    <h1>ECONOMIA <h4>Y</h4></h1>
-                    <h1>ANALISIS</h1>
-                    <h4>Descubre cómo la economia moderde</h4>
-                    <h4>transformar tu presencia en el munndo negocios y lleva tu vida a nuevas alturas.</h4>
-                    
-                </header>
+
+            <div id="ContainerImgHeader">
+                <img id="ImgFondoHeader" src="https://planmc2.com/wp-content/uploads/2017/08/starry-space-planmc2.gif" alt="" />
             </div>
-            <div>
-                <button id="BtnExplorarVerMas">Explorara <br />Ver Mas</button>
+            {/* Título principal centrado arriba */}
+            <h1 id="main-title">FENIX</h1>
+
+            {/* Contenido alineado a la izquierda */}
+            <div id="content">
+                <header>
+                    {/* Contenedor con los títulos "ECONOMIA" y "DEL SIGLO XXI" */}
+                    <div id="economy-container">
+                        <h1 id="economy-title">ECONOMIA</h1>
+                        <h4 id="sub-title">DEL SIGLO XXI</h4>
+                    </div>
+
+                    {/* Título "Y ANALISIS DE DATOS" */}
+                    <h1 id="analysis-title">Y ANALISIS DE DATOS</h1>
+
+                    {/* Descripción */}
+                    <p className="subtitle">
+                        Descubre cómo la <span className="highlight">economía moderna</span> puede transformar tu presencia en el mundo de los negocios y llevar tu vida a nuevas <span className="red-dot">alturas.</span>
+                    </p>
+                </header>
+
+                {/* Botón */}
+                <button id="BtnExplorarVerMas">Explorar <br /> Más</button>
             </div>
         </div>
-    )
+    );
 }
 
-export default HeaderHome
+export default HeaderHome;

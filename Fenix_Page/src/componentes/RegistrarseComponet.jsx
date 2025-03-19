@@ -61,22 +61,24 @@ function RegistrarseComponet() {
     }
 
     return (
-        <div id="Container-Form-Trabajadores">
-            <h1>Registrar Trabajadores</h1>
-            <label htmlFor="nombre" id="LabelFormTrabajador">Nombre</label><br />
-            <input type="text" value={NombreUsu}  onChange={nombre} id="InputFormTrabajador" placeholder="Ingrese Su nombre completo"/>
-            <br />
-            <label htmlFor="email" id="LabelFormTrabajador">Correo electronico</label><br />
-            <input type="text" value={EmailUsu} onChange={email} id="InputFormTrabajador" placeholder="Ingrese su correo electrico" />
-            <br />
-            <label htmlFor="password" id="LabelFormTrabajador">Contraseña</label><br />
-            <input type="text" value={ContraUsu} onChange={password} id="InputFormTrabajador" placeholder="Ingrese su contraseña"/>
-            <br />
-            <label htmlFor="direccion" id="LabelFormTrabajador">Direccion</label><br />
-            <input type="text" value={DirecUsu} onChange={direccion} id="InputFormTrabajador"  placeholder="Ingrese la direccion de entrega"/>
-            <br />
-            <button id="BtnCargar" onClick={cargar}>Registrarse</button>
-            <Link to={'/Login'}>Iniciar sesion</Link>
+        <div id="Registro">
+            <div id="Container-Form-Usuarios">
+                <h1 id="TituloRegistrarse">Registrarse</h1>
+                <label htmlFor="nombre" id="LabelFormTrabajador">Nombre</label><br />
+                <input type="text" value={NombreUsu}  onChange={nombre} id="InputFormTrabajador" placeholder="Ingrese Su nombre completo"/>
+                <br />
+                <label htmlFor="email" id="LabelFormTrabajador">Correo electronico</label><br />
+                <input type="text" value={EmailUsu} onChange={email} id="InputFormTrabajador" placeholder="Ingrese su correo electrico" />
+                <br />
+                <label htmlFor="password" id="LabelFormTrabajador">Contraseña</label><br />
+                <input type="text" value={ContraUsu} onChange={password} id="InputFormTrabajador" placeholder="Ingrese su contraseña"/>
+                <br />
+                <label htmlFor="direccion" id="LabelFormTrabajador">Direccion</label><br />
+                <input type="text" value={DirecUsu} onChange={direccion} id="InputFormTrabajador"  placeholder="Ingrese la direccion de entrega"/>
+                <br />
+                <button id="BtnCargar" onClick={cargar}>Registrarse</button>
+                <strong><Link to={'/Login'}>Iniciar sesion</Link></strong>
+            </div>
         </div>
     );
 }
