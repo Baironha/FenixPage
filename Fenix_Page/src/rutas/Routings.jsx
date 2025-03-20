@@ -26,6 +26,7 @@ function Routing() {
                                     <Route path="/Admin" element={<Administradores/>}/>
                                     <Route path="/Edu" element={<EduacionPage/>}/>
                                     <Route path="/Contact" element={<ContactPage/>}/>
+                                    <Route path="/Campus" element={<EduacionPage/>}/>
 
                             
                                     

@@ -1,8 +1,13 @@
 {
   "Usuarios": [
-
+    {
+      "id": "be72",
+      "rol": "Usuario",
+      "nombre": "Bairon Horna",
+      "email": "bayronha077@gmail.com",
+      "password": "bairon12345",
+      "direccion": "puntarenas cr"
+    }
   ],
-  "SolicitudSocio":[
-    
-  ]
+  "SolicitudSocio": []
 }

@@ -1,0 +1,83 @@
+/* Contenedor general */
+#ContainerFormContact {
+    left: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* @keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; filter: brightness(1.2); }
+    50% { background-position: 100% 50%; filter: brightness(1.5); }
+    100% { background-position: 0% 50%; filter: brightness(1.2); }
+} */
+
+/* Contenedor del formulario */
+#Formcontact {
+    backdrop-filter: blur(25px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 25px rgba(255, 0, 0, 0.5);
+    text-align: center;
+    width: 360px;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+#Formcontact:hover {
+    box-shadow: 0px 8px 30px rgba(255, 0, 0, 0.7);
+}
+
+/* Título con animación */
+#LabelContact {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+} */
+
+/* Inputs */
+#InputContact, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+
+#InputContact:focus, textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #ff0000;
+}
+
+/* Botón */
+#BtnSubmit{
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background: linear-gradient(90deg, #ff9100, #ff0000);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+#BtnSubmit:hover {
+    background: linear-gradient(90deg, #ff0000, #ffcc00);
+    transform: scale(1.05);
+}

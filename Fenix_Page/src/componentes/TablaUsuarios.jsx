@@ -62,8 +62,6 @@ function TablaUsuarios(){
         <div>
             <div id="ContainerTabla">
                 <h1>GESTION DE USUARIOS</h1>
-                <label id="LabelNotificacion" htmlFor="Notifica al usuario"></label>
-                <input id="InputNotificacion" type="text" placeholder="Correo electronico para el usuario"/>
                 <div id="ContainerBtn">
                     <button id="MostrarTablaTrabajador" onClick={obtenerDatos}>Mostrar Tabla</button><br />
                     <br />
