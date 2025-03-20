@@ -2,7 +2,7 @@ import React from "react";
 import '../style/EducacionStyle.css'
 import { Link} from "react-router-dom";
 
-function EduacionFenix(){
+function EduacionHome(){
     return(
         <div >
             <h1 id="TituloEducacionFenix">EDUCACION FENIX</h1>
@@ -16,10 +16,10 @@ function EduacionFenix(){
                     <p> <strong>conviertete en tu personaje favorito y se el emprendedor@ de tus sueños </strong></p>
                     <p> <strong>se tu heroe y rescatate de la inflacion con tus conocimientos y habilidades </strong></p>
                     <p><strong>estudia de forma gratuita con nosotros, de la mano con profesionales </strong></p>
-                    <button id="BtnEduFenix"><Link to={'/Edu'}>¡ESTUDIA AQUI!</Link></button>
+                    <button id="BtnEduFenix"><Link to={'/Campus'}>¡ESTUDIA AQUI!</Link></button>
                 </div>
             </div>
         </div>
     )
 }
-export default EduacionFenix
+export default EduacionHome

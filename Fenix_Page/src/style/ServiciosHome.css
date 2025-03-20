@@ -1,8 +1,4 @@
-/* Contenedor principal */
-body {
-  position: relative;
-  background-color: #0D0D0D;
-}
+
 
 /* Animación para ImgAdministracion */
 #ImgAdministracion{
@@ -75,7 +71,7 @@ body {
 
 /* Estilos de las tarjetas */
 #ContServicios > div {
-  background: #000000;
+  background: #010311;
   border-radius: 16px;
   padding: 40px;
   text-align: center;

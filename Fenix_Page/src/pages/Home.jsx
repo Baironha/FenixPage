@@ -9,7 +9,7 @@ import FooterComponet from "../componentes/FooterComponet";
 import Btnwhatsapp from "../componentes/BtnWhatsapp";
 import ServiciosHome from "../componentes/ServiciosHome";
 import SolicitudSocio from "../componentes/SolicitudSocio";
-import EduacionFenix from "../componentes/EducacionFenix";
+import EduacionHome from "../componentes/EducacionHome";
 
 
 function Home(){
@@ -25,7 +25,7 @@ function Home(){
             <ServiciosHome/>
             <br />
             <br />
-            <EduacionFenix/>
+            <EduacionHome/>
             <br />
             <br />
             <SolicitudSocio/>
