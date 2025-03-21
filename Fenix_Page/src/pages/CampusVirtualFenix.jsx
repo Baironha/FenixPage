@@ -8,7 +8,7 @@ function CampusVirtualFenix() {
         <div>
             <NavBar/>
             <CampusFenix/>
-            <FooterComponet2/>
+            <FooterComponet/>
         </div>
     )
 }

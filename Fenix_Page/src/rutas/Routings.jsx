@@ -8,7 +8,7 @@ import RegistrarsePage from '../pages/RegistrarsePage'
 import Administradores from '../pages/Administradores';
 import ContactPage from '../pages/ContactPage';
 import CampusVirtualFenix from '../pages/CampusVirtualFenix';
-
+import EduAdminNegociosPage from '../pages/EduAdminNegociosPage';
 
 function Routing() {
 
@@ -18,14 +18,20 @@ function Routing() {
             <Router>
                 <Routes>
             
-                                
 
-                                    <Route path="/home" element={<Home/>}/>
-                                    <Route path="/Login" element={<LoginPage/>}/>
-                                    <Route path="/Registrarse" element={<RegistrarsePage/>}/>
-                                    <Route path="/Admin" element={<Administradores/>}/>
+
+                                    <Route path="/" element={<Home/>}/>{/* HOME */}
+                                    <Route path="/Login" element={<LoginPage/>}/>   {/* LOGIN */}
+                                    <Route path="/Registrarse" element={<RegistrarsePage/>}/>{/* REGISTER */}
+                                    <Route path="/Admin" element={<Administradores/>}/>{/* PAGINA DE ADMINISTRADORES */}
+
                                     <Route path="/Contact" element={<ContactPage/>}/>
+
+                                    {/* Paginas educativa */}
                                     <Route path="/Campus" element={<CampusVirtualFenix/>}/>
+                                    <Route path="/EduAdmin" element={<EduAdminNegociosPage/>}/>
+                                    <Route path="/EduEconomia" element={<InflationPage/>}/>
+                                    <Route path="/EduDtScients" element={<EduDataScientsPage/>}/>
 
                             
                                     
