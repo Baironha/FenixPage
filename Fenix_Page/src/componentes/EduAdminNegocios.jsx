@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Pdf from '../PDF/Historia de la economía y su origen.pdf';
 
 function EduAdminNegocio() {
     const [visibleSections, setVisibleSections] = useState({
@@ -37,7 +38,9 @@ function EduAdminNegocio() {
                     <div>
                         <p>Introducción a la administración.</p>
                         <p>Principios básicos y objetivos.</p>
-                        
+                        <div className = "App">
+                            <a href = {Pdf} target = "_blank">Download Pdf</a>
+                        </div>
                     </div>
                 )}
             </div>
