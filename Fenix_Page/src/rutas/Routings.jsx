@@ -6,8 +6,9 @@ import Home from '../pages/Home';
 import LoginPage from '../pages/LoginPage';
 import RegistrarsePage from '../pages/RegistrarsePage'
 import Administradores from '../pages/Administradores';
-import ContactPage from '../pages/ContactPage';
 import CampusVirtualFenix from '../pages/CampusVirtualFenix';
+import GestionUsuPage from '../pages/GestionUsuPage';
+import IndicadoresPage from '../pages/IndicadoresPage';
 
 
 /* PAGINAS ESTUDIANTILES */
@@ -26,13 +27,14 @@ function Routing() {
             
 
                                     {/* Paginas de usuarios */}
-                                    <Route path="/" element={<Home/>}/>{/* HOME */}
+                                    <Route path="/home" element={<Home/>}/>{/* HOME */}
                                     <Route path="/Login" element={<LoginPage/>}/>   {/* LOGIN */}
                                     <Route path="/Registrarse" element={<RegistrarsePage/>}/>{/* REGISTER */}
 
                                     {/* PAGINA DE ADMINISTRADORES */}
                                     <Route path="/Admin" element={<Administradores/>}/>
-                                    <Route path="/Contact" element={<ContactPage/>}/>
+                                    <Route path="/KPI" element={<IndicadoresPage/>}/>
+                                    <Route path="/GestionUsu" element={<GestionUsuPage/>}/>
 
                                     {/* Paginas educativa */}
                                     <Route path="/Campus" element={<CampusVirtualFenix/>}/>

@@ -6,7 +6,10 @@ import PdfImpotanciaEco from '../PDF/La Importancia de entender la economía.pdf
 import PdfQueEsLaEco from '../PDF/Que es la economía y su función.pdf'
 import PdfQueEsInflacion from '../PDF/Que es y como surgió la inflación.pdf'
 import PdfDesarolloInflacion from '../PDF/Desarrollo de la inflación.pdf'
-import PdfAfectaInflacion from '../PDF/Como nos afecta la inflación.pdf'
+import PdfPaisesAfectaInflacion from '../PDF/Como nos afecta la inflación.pdf'
+import PdfPaisesAfectadosInflacion from '../PDF/Paises afectados por la inflación.pdf'
+import PdfEvadirInflacion from '../PDF/Se podra evadir la inflación.pdf'
+import PdfComoEmprender from '../PDF/como emprender en el siglo XXI.pdf'
 import '../style/EduEco.css'
 
 function EduInflacionEconomia() {
@@ -29,13 +32,14 @@ function EduInflacionEconomia() {
         <div>
             <h1 id='T1'>ECONOMIA DEL SIGLO XXI</h1>
             <h1 id='T2'>FENIX</h1>
-            <div>
+            {/* <div>
                 <p><strong>PROFESOR: BAIRON HORNA ALVAREZ</strong></p>
                 <p><strong>MODALIDAD: VIRTUAL</strong></p>
                 <p><strong>HORARIOS: OPEN</strong></p>
                 <p><strong>AULA: ECONOMIA</strong></p>
                 <p><strong>DURACION: 4 semanas</strong></p>
-            </div>
+            </div> */}
+            <br />
             <div id='padre'>
                 <br />
                 <div id='Seccion1' onClick={() => toggleSection('Seccion1')} style={{ cursor: 'pointer', border: '1px solid black', padding: '10px' }}>
@@ -289,10 +293,10 @@ function EduInflacionEconomia() {
                                     <a href = {PdfQueEsInflacion} target = "_blank">LA HISTORIA DE LA ECNOMIA</a>
                                 </div>
                                 <div className = "App">
-                                    <a href = {PdfDesarolloInflacion} target = "_blank">LA HISTORIA DE LA ECNOMIA</a>
+                                    <a href = {PdfPaisesAfectadosInflacion} target = "_blank">LA HISTORIA DE LA ECNOMIA</a>
                                 </div>
                                 <div className = "App">
-                                    <a href = {PdfAfectaInflacion} target = "_blank">LA HISTORIA DE LA ECNOMIA</a>
+                                    <a href = {PdfDesarolloInflacion} target = "_blank">LA HISTORIA DE LA ECNOMIA</a>
                                 </div>
                                 <div>
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/TOVvFXR3jA8?si=wbbpIotDbD073Jsb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -307,22 +311,106 @@ function EduInflacionEconomia() {
                             <div>
                                 <div id='Seccion'>
                                     <p id='Contenido'>
-                                        
+                                        <strong>Se puede evadir la inflación?</strong><br />
+                                        Evadir completamente la inflación es prácticamente imposible, ya que forma parte
+                                        del ciclo económico global. Sin embargo, existen estrategias para mitigar sus efectos
+                                        y proteger el poder adquisitivo en el siglo XXI.
+                                    </p>
+                                </div>
+                                <div id='Seccion'>
+                                    <p id='Contenido'>
+                                        <strong>1. Invertir en Activos Resistentes a la Inflación</strong><br />
+                                        En épocas de inflación, el valor del dinero en efectivo disminuye con el tiempo. Para
+                                        evitar esta pérdida, se recomienda invertir en activos que mantengan o aumenten su
+                                        valor, como: <br />
+                                        <br />
+                                        <strong>Bienes raíces:</strong> Históricamente, las propiedades tienden a valorizarse con la inflación.
+                                        <br />
+                                        <strong>Metales preciosos:</strong> Oro y plata son refugios de valor en tiempos de incertidumbre
+                                    </p>
+                                </div>
+                                <div id='Seccion'>
+                                    <p id='Contenido'>
+                                        <strong>Bolsa de valores:</strong>
+                                        Acciones de empresas con alta demanda, fondos indexados y ETFs pueden ayudar a
+                                        superar la inflación. <br />
+                                        <br />
+                                        <strong>Criptomonedas:</strong>
+                                        Aunque volátiles, algunas como Bitcoin han sido consideradas un refugio contra la
+                                        devaluación de las monedas.
+                                    </p>
+                                </div>
+                                <div id='Seccion'>
+                                    <p id='Contenido'>
+                                        <strong>2. Diversificar Ingresos y Proteger el Poder Adquisitivos</strong><br />
+                                        Depender de una única fuente de ingresos puede ser riesgoso en tiempos de
+                                        inflación. Algunas formas de diversificación incluyen: <br />
+                                        <br />
+                                        <strong>Emprendimientos digitales:</strong><br />
+                                        Negocios en línea, comercio electrónico y servicios
+                                        remotos permiten generar ingresos adicionales.
+                                        <br />
+                                        <strong>Inversiones pasivas:</strong><br />
+                                        Dividendos, bonos ajustados a la inflación y otros activos
+                                        <br />
+                                        <strong>financieros pueden proporcionar estabilidad.</strong><br />
+                                        Educación y mejora de habilidades: Asegurar un crecimiento profesional con
+                                        habilidades demandadas aumenta la posibilidad de obtener mejores ingresos
+                                    </p>
+                                </div>
+                                <div id='Seccion'>
+                                    <p id='Contenido'>
+                                        <strong>3. Reducir Deudas con Tasas Variables</strong><br />
+                                        Las tasas de interés suelen aumentar para controlar la inflación, encareciendo los
+                                        <br />
+                                        <strong>créditos. Para evitar problemas financieros:</strong><br />
+                                        Prioriza pagar deudas con intereses altos y variables.
+                                        <br />
+                                        Refinancia préstamos en momentos de tasas bajas.
+                                        <br />
+                                        Evita adquirir nuevas deudas innecesarias.
+                                    </p>
+                                </div>
+                                <div id='Seccion'>
+                                    <p id='Contenido'>
+                                        <strong>4. Optimizar el Gasto y Aumentar el Ahorro Inteligente</strong><br />
+                                        <strong>El aumento en el costo de vida requiere ajustes en la administración financiera:</strong> <br />                                    <br />
+                                        <strong>Presupuesto ajustado:</strong> <br />
+                                        Identifica gastos esenciales y reduce compras innecesarias.
+                                        <br />
+                                        <strong>Compras estratégicas:</strong> <br />
+                                        Aprovecha ofertas, descuentos y compra al por mayor en
+                                        productos de primera necesidad.
+                                        <br />
+                                        <strong>Ahorro en activos reales:</strong> <br />
+                                        En lugar de guardar dinero en efectivo, considera opciones
+                                        que generen valor con el tiempo.
+                                    </p>
+                                </div>
+                                <div id='Seccion'>
+                                    <p id='Contenido'>
+                                        <strong>Conclusión</strong><br />
+                                        Si bien la inflación es un reto inevitable, existen múltiples estrategias para reducir su
+                                        impacto. Invertir en activos sólidos, diversificar ingresos, gestionar deudas y
+                                        optimizar el gasto son claves para protegerse en la economía del siglo XXI. La clave
+                                        está en la educación financiera, la adaptación al entorno digital y la toma de
+                                        decisiones estratégicas.
                                     </p>
                                 </div>
                                 <h3>MATERIAL DE APOYO</h3>
                                 <p>DOCUMENTAION COMPLETA DE LA SEMANA EN PDF</p>
                                 <div className = "App">
-                                    <a href = {PdfQueEsInflacion} target = "_blank">LA HISTORIA DE LA ECNOMIA</a>
+                                    <a href = {PdfPaisesAfectaInflacion} target = "_blank">Los paises afectados por la inflacion</a>
                                 </div>
                                 <div className = "App">
-                                    <a href = {PdfDesarolloInflacion} target = "_blank">LA HISTORIA DE LA ECNOMIA</a>
+                                    <a href = {PdfEvadirInflacion} target = "_blank">LSe puede evadir la inflacion?</a>
                                 </div>
                                 <div className = "App">
-                                    <a href = {PdfAfectaInflacion} target = "_blank">LA HISTORIA DE LA ECNOMIA</a>
+                                    <a href = {PdfComoEmprender} target = "_blank">Como emprender en el siglo XXI</a>
                                 </div>
+                                <br />
                                 <div>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TOVvFXR3jA8?si=wbbpIotDbD073Jsb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOI7bGSPG7g?si=RGsYzEdc6f4WA2zR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                             </div>
                         )}

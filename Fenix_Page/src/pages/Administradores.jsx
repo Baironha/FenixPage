@@ -1,14 +1,17 @@
 import React from "react";
-import TablaUsuarios from "../componentes/TablaUsuarios";
-import ContactUs from "../componentes/ContacUs";
+import Sidebar from "../componentes/SideBar";
+import CardAdmin from '../componentes/CardAdmin'
+import ContacUs from '../componentes/ContacUs'
+
 
 function Administradores (){
     return(
         <div>
-            <TablaUsuarios/>
+            <Sidebar/>
             <br />
-            <ContactUs/>
-            
+            <CardAdmin/>
+            <br />
+            <ContacUs/>
         </div>
     )
 }
